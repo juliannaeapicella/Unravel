@@ -1,0 +1,233 @@
+/*embed font and zero out margins*/
+@font-face 
+{
+	font-family: "Crafty Girls";
+	src: url("../media/CraftyGirls.ttf");
+}
+* 
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+/*heading styles*/
+#main-header 
+{
+	padding: 1%;
+	font-size: 40px;
+	text-shadow:
+		0.9px 0.9px 0 #3A362C,  
+		0.9px 0.9px 0 #3A362C,
+		0.9px 0.9px 0 #3A362C,
+		0.9px 0.9px 0 #3A362C;
+}
+header
+{
+	padding: 2%;
+	text-align: center;
+	color: #7E7660;
+	background-color: #d8e4da;
+	font-family: "Crafty Girls", sans-serif;
+	font-size: 26px;
+}
+/*navigation styles*/
+nav ul
+{
+	text-align: center;
+	background-color: #d1cfc0;
+	border-top: medium solid #7E7660;
+	border-bottom: medium solid #7E7660;
+}
+nav li
+{
+	padding: 1em 5% 1em 5%;
+	display: inline-block;
+	width: 10%;
+}
+nav a 
+{
+	font-family: 'Cantora One', Cambria, "sans-serif";
+	font-size: 18px;
+	text-shadow: 0.5px 0.5px 1px #9c947d;
+	text-decoration: none;
+}
+nav a:link 
+{
+	color: #7E7660;
+}
+nav a:visited
+{
+	color: #7E7660;
+}
+nav a:hover
+{
+	color: ghostwhite;
+	transition: 0.1s;
+}
+nav a:active
+{
+	color: #7E7660;
+}
+#current 
+{
+	border-left: medium solid #706955;
+	border-right: medium solid #706955;
+	color: #7E7660;
+	background-color: #e4d9d8;
+	text-shadow: none;
+}
+/*body styles*/
+body 
+{
+	background-image: url(../media/yarn-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+section 
+{
+	min-height: 100%;
+	padding: 2em 5% 10em 5%;
+	color: #3A362C;
+	font-family: 'Mandali', sans-serif;
+	text-shadow: 0px 0px 1px white;
+}
+section p 
+{
+	font-size: 20px;
+}
+#main-image 
+{
+	float: left;
+	margin: 0% 5% 0% 5%;
+	border: thick solid #7E7660;
+}
+.outline h2 
+{
+	color: #3A362C;
+	border-bottom: medium solid #3A362C;
+	margin-bottom: 1em;
+}
+.outline h3 
+{
+	color: #3A362C;
+	text-decoration: underline;
+}
+.outline p 
+{
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+.outline img 
+{
+	display: block;
+    margin: 2em auto 1em auto;
+	border: thick solid #7E7660;
+}
+.documentation h2 
+{
+	color: #3A362C;
+	border-bottom: medium solid #3A362C;
+	margin: 1em 0 1em 0;
+}
+.documentation ul 
+{
+	padding-left: 5%;
+	list-style: circle;
+}
+.documentation a:link 
+{
+	color: #366C3F;
+}
+.documentation a:visited
+{
+	color: #7E7660;
+}
+.documentation a:hover
+{
+	color: #3A362C;
+}
+.documentation a:active
+{
+	color: black;
+}
+/*footer styles*/
+footer 
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: right;
+	padding: 1% 2% 1% 0%;
+	margin-top: 5%;
+	background-color: #e4d9d8;
+	box-shadow: 0px 0px 30px 1px darkgrey;
+}
+footer p 
+{
+	color: #3A362C;
+	font-family: 'Mandali', sans-serif;
+	font-size: 12px;
+}
+/*style game*/
+#project 
+{
+	text-align: center;
+}
+#project canvas
+{
+	margin: 0 auto 0 auto;
+	border: thick solid #7E7660;
+}
+/*mobile design - screen shifts style at 950px beause the ranges between certain size values cause unusual glitches*/
+@media only screen and (max-width: 950px) 
+{
+	/*header styles*/
+	header 
+	{
+		border-bottom: medium solid #7E7660;
+		font-size: 20px;
+	}
+	/*navigation styles*/
+	nav 
+	{
+		background-color: #d1cfc0;
+	}
+    nav ul
+	{
+		display: initial;
+	}
+	nav li 
+	{
+		display: block;
+		width: auto;
+		border-bottom: medium solid #7E7660;
+	}
+	#current 
+	{
+		padding: 1em;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		background-color: #e4d9d8;
+		text-shadow: none;
+	}
+	/*body styles*/
+	body 
+	{
+		background-image: none;
+		background-color: lightgrey;
+	}
+	#main-image 
+	{
+		float: none;
+		display: block;
+		margin: auto auto 1em auto;
+	}
+	.outline img 
+	{
+		max-width: 100%;
+		height: auto;
+	}
+}
